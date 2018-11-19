@@ -14,14 +14,22 @@ public class Cat {
     }
 
     void setWeight(double newWeight){
-        weight = newWeight;
+        if (newWeight < 0.0){
+            weight = newWeight; //you cant have a negative weight
+        } else {
+            throw new RuntimeException();
+        }
     }
 
     public Cat (){
 
     }
 
-    public Cat(String userName){
-        name = userName;
+    public Cat(String xName){
+        name = xName;
+    }
+
+    public void meow(){
+        System.out.println("meow meow meow meow");
     }
 }
