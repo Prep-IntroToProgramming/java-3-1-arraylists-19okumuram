@@ -6,7 +6,7 @@ public class Cat {
     }
 
     void setName(String newName){
-        name = newName;
+        name = newName; //setting name
     }
 
     double getWeight(){
@@ -14,7 +14,7 @@ public class Cat {
     }
 
     void setWeight(double newWeight){
-        weight = newWeight;
+        weight = newWeight; //setting weight
     }
 
     public Cat (){
@@ -25,7 +25,7 @@ public class Cat {
         name = xName;
     }
 
-    public void meow(){
+    public void meow(){ // cat says different things based off of weight
         if (weight < 4){
             System.out.println("meow");
         } else if ((weight >= 4) && (weight < 8)){
