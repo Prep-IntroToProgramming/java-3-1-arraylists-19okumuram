@@ -14,11 +14,7 @@ public class Cat {
     }
 
     void setWeight(double newWeight){
-        if (newWeight < 0.0){
-            weight = newWeight; //you cant have a negative weight
-        } else {
-            throw new RuntimeException();
-        }
+        weight = newWeight;
     }
 
     public Cat (){

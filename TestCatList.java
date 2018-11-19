@@ -11,8 +11,9 @@ public class TestCatList{
         catList.get(3).setName("timon");
         for(Cat myCat: catList){
             myCat.setWeight(Math.random()*10+5);
+            System.out.println(myCat.getName() + " weighs " + myCat.getWeight() + " lbs.");
+            myCat.meow();
         }
-        System.out.println(catList.get(0).getName() + "'s weight is " + catList.get(0).getWeight());
-
+       
     }
 }
